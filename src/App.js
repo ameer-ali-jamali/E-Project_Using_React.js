@@ -1,82 +1,9 @@
-// import logo from './logo.svg';
-import "./App.css";
+import header from "./Components/header";
 
 function App() {
   return (
     <>
-      <section className="menu cid-s48OLK6784" alt="menu" id="menu1-h">
-        <nav className="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
-          <div className="container">
-            <div className="navbar-brand">
-              {/* <span className="navbar-logo">
-                <a href={"/"}>
-                  <img
-                    src={"assets/images/mbr-121x81.jpg"}
-                    alt="menu"
-                    className="nav-img"
-                  />
-                </a>
-              </span> */}
-              <span className="navbar-caption-wrap">
-                <a className="navbar-caption text-black display-7" href={"/"}>
-                  Temp-Details
-                </a>
-              </span>
-            </div>
-            <button
-              className="navbar-toggler navbar-"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-              style={{
-                boxSizing: "border-box",
-                border: "1px solid dodgerblue",
-                fontSize: "xx-large"
-              }}
-            >
-              <span
-                class="fas fa-bars"
-                style={{
-                  color: "darkorange",
-                  fontSize: "xx-large"
-                }}
-              ></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarContent">
-              <ul
-                className="navbar-nav nav-dropdown nav-right"
-                data-app-modern-menu="true"
-              >
-                <li className="nav-item">
-                  <a className="nav-link link text-black display-4" href={"/"}>
-                    Home
-                    <br />
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link link text-black display-4" href={"/"}>
-                    Generate Details
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link link text-black display-4" href={"/"}>
-                    Contact Us
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link link text-black display-4" href={"/"}>
-                    About
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </section>
-
+      {header()}
       <div
         className="header1 cid-s48MCQYojq mbr-fullscreen mbr-parallax-background"
         id="header1-f"
@@ -116,7 +43,6 @@ function App() {
           </div>
         </div>
       </div>
-
       <div className="content1 cid-s48udlf8KU" id="content1-8">
         <div className="container">
           <div className="row justify-content-center">
@@ -136,13 +62,12 @@ function App() {
           </div>
         </div>
       </div>
-
       <div className="image3 cid-s48upRUlSD" id="image3-9">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-12 col-lg-9">
               <div className="image-wrapper">
-                <a href="https://www.mei.edu/sites/default/files/styles/featured_image_article/public/2021-01/Sigheh%20Certificate.jpg?itok=hvYpSbY9">
+                <a href="https:www.mei.edu/sites/default/files/styles/featured_image_article/public/2021-01/Sigheh%20Certificate.jpg?itok=hvYpSbY9">
                   <img
                     src="assets/images/mbr-1646x1097.jpg"
                     alt="WebsiteBuild"
@@ -156,7 +81,6 @@ function App() {
           </div>
         </div>
       </div>
-
       <div className="content1 cid-s48vaXqeL6" id="content1-b">
         <div className="container">
           <div className="row justify-content-center">
@@ -172,7 +96,6 @@ function App() {
           </div>
         </div>
       </div>
-
       <div className="content1 cid-s48vnjULo4" id="content1-c">
         <div className="container">
           <div className="row justify-content-center">
@@ -192,7 +115,6 @@ function App() {
           </div>
         </div>
       </div>
-
       <div className="content1 cid-s48vrXhP0J" id="content1-d">
         <div className="container">
           <div className="row justify-content-center">
@@ -210,7 +132,6 @@ function App() {
           </div>
         </div>
       </div>
-
       <section className="footer3 cid-s48P1Icc8J" id="footer3-i">
         <div className="container">
           <div className="media-container-row align-center mbr-white">
@@ -265,13 +186,6 @@ function App() {
           </div>
         </div>
       </section>
-
-      <script src={"assets/bootstrap/js/bootstrap.bundle.min.js"}></script>
-      <script src={"assets/parallax/jarallax.js"}></script>
-      <script src={"assets/smoothscroll/smooth-scroll.js"}></script>
-      <script src={"assets/ytplayer/index.js"}></script>
-      <script src={"assets/dropdown/js/navbar-dropdown.js"}></script>
-      <script src={"assets/theme/js/script.js"}></script>
     </>
   );
 }
