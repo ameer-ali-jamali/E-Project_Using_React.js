@@ -1,3 +1,5 @@
+import React from "react";
+// import { name } from "../App";
 export default function header() {
   return (
     <section className="menu cid-s48OLK6784" alt="menu" id="menu1-h">
@@ -49,7 +51,10 @@ export default function header() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link link text-black display-4" href={"/"}>
+                <a
+                  className="nav-link link text-black display-4"
+                  href={"/about"}
+                >
                   About
                 </a>
               </li>
