@@ -1,10 +1,10 @@
-import Header from "./Components/header";
-import Content from "./Components/content";
-import Footer from "./Components/footer";
+import Header from "./Components/Header";
+import Content from "./Components/Content";
+import Footer from "./Components/Footer";
 function App() {
   return (
     <div>
-      <Header />
+      <Header title={67} />
       <Content />
       <Footer />
     </div>

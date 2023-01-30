@@ -1,4 +1,6 @@
-export default function Header() {
+import PropTypes from "prop-types";
+import React from "react";
+export default function Header(props) {
   return (
     <section className="menu cid-s48OLK6784" alt="menu" id="menu1-h">
       <nav className="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
@@ -6,7 +8,7 @@ export default function Header() {
           <div className="navbar-brand">
             <span className="navbar-caption-wrap">
               <a className="navbar-caption text-black display-7" href={"/"}>
-                Temp-Details
+                {props.title}
               </a>
             </span>
           </div>
@@ -63,3 +65,6 @@ export default function Header() {
     </section>
   );
 }
+Header.propTypes = {
+  title: PropTypes.string
+};
