@@ -1,20 +1,12 @@
-// import header from "./Components/header";
-// import footer from "./Components/footer";
-// import content from "./Components/content";
-import Welcome from "./Components/welcome";
-// function App() {
-//   return (
-//     <>
-//       <h1>hello</h1>
-//     </>
-//   );
-// }
+import Header from "./Components/header";
+import Content from "./Components/content";
+import Footer from "./Components/footer";
 function App() {
   return (
     <div>
-      <Welcome name="Sara" />
-      <Welcome name="Cahal" />
-      <Welcome name="Edite" />
+      <Header />
+      <Content />
+      <Footer />
     </div>
   );
 }

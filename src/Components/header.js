@@ -1,6 +1,4 @@
-import React from "react";
-
-export default function header() {
+export default function Header() {
   return (
     <section className="menu cid-s48OLK6784" alt="menu" id="menu1-h">
       <nav className="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
