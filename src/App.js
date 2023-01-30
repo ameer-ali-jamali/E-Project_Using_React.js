@@ -1,16 +1,12 @@
-import header from "./Components/header";
-import footer from "./Components/footer";
-import content from "./Components/content";
-var name = false;
+import Welcome from "./Components/welcome";
+
 function App() {
   return (
-    <>
-      {header()}
-      {content()}
-      {footer()}
-    </>
+    <div>
+      <Welcome name="Sara" />
+      <Welcome name="Cahal" />
+      <Welcome name="Edite" />
+    </div>
   );
 }
-
 export default App;
-export { name };
