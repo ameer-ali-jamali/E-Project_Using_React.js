@@ -4,10 +4,11 @@ import Footer from "./Components/Footer";
 function App() {
   return (
     <div>
-      <Header title={67} />
+      <Header title={"Temp_Details"} />
       <Content />
       <Footer />
     </div>
   );
 }
+
 export default App;

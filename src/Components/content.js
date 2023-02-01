@@ -27,7 +27,7 @@ export default function Content() {
               </h1>
 
               <p className="mbr-text mbr-fonts-style display-7">
-                Here You Can Easily{" "}
+                Here You Can Easily
                 <strong>
                   <em>Generate Temp-Details</em>
                 </strong>{" "}
