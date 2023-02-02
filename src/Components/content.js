@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Content() {
+  const [text, setText] = useState("");
+  let generate_details = () => {
+    setText("hello");
+    console.log(text);
+  };
+  let handleOnChange = (event) => {
+    console.log(event.target.value);
+  };
   return (
     <>
       <div
@@ -33,10 +41,21 @@ export default function Content() {
                 </strong>{" "}
                 Which Will Be Use Anywhere as<em> You want to use</em>.
               </p>
+              <input
+                type="text"
+                value={text}
+                name=""
+                id=""
+                onChange={handleOnChange}
+                className="mt-5"
+              />
               <div className="mbr-section-btn mt-3">
-                <a className="btn btn-success display-4" href={"/"}>
+                <button
+                  className="btn btn-success display-4"
+                  onClick={generate_details}
+                >
                   Generate
-                </a>
+                </button>
               </div>
             </div>
           </div>
