@@ -4,9 +4,9 @@ import React, { useState } from "react";
 export default function Content(props) {
   const [text, setText] = useState("");
   let generate_details = () => {
-    setText("This is rendom test for testing");
+    setText(`Name :  Amjad`);
   };
-  let clear_list = () => {
+  let clear = () => {
     let clear = "";
     setText(clear);
   };
@@ -44,19 +44,17 @@ export default function Content(props) {
                 Which Will Be Use Anywhere as<em> You want to use</em>.
               </p>
               <div>
-                <div className="container mt-3">
-                  <textarea
-                    name=""
-                    id=""
-                    cols="30"
-                    rows="10"
-                    value={text}
-                    onChange={handleOnChange}
-                    style={{
-                      width: "100%",
-                      background: "transparent"
-                    }}
-                  ></textarea>
+                <div className="container mt-3 position-relative">
+                  <div className="container">
+                    <div className="container position-relative">
+                      <input
+                        type="text"
+                        name="name"
+                        value={text}
+                        onChange={handleOnChange}
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="mbr-section-btn mt-3">
@@ -66,11 +64,8 @@ export default function Content(props) {
                 >
                   Generate
                 </button>
-                <button
-                  className="btn btn-danger display-4"
-                  onClick={clear_list}
-                >
-                  Clear List
+                <button className="btn btn-danger display-4" onClick={clear}>
+                  Clear
                 </button>
               </div>
             </div>
