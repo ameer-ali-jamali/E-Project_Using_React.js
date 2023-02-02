@@ -60,11 +60,16 @@ export default function Content(props) {
               <div className="mbr-section-btn mt-3">
                 <button
                   className="btn btn-success display-4"
+                  id="generateNameBtn"
                   onClick={generate_details}
                 >
                   Generate
                 </button>
-                <button className="btn btn-danger display-4" onClick={clear}>
+                <button
+                  className="btn btn-danger display-4 display-class"
+                  id="clearBtn"
+                  onClick={clear}
+                >
                   Clear
                 </button>
               </div>

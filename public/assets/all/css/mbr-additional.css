@@ -1197,7 +1197,9 @@ a {
 .cid-s48OLK6784 .navbar.navbar-short .navbar-brand {
   padding: 0;
 }
-
+.display-class {
+  display: none;
+}
 .cid-s48OLK6784 .navbar-brand {
   flex-shrink: 0;
   align-items: center;
