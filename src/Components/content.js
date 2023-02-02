@@ -41,14 +41,22 @@ export default function Content() {
                 </strong>{" "}
                 Which Will Be Use Anywhere as<em> You want to use</em>.
               </p>
-              <input
-                type="text"
-                value={text}
-                name=""
-                id=""
-                onChange={handleOnChange}
-                className="mt-5"
-              />
+              <div>
+                <div className="container mt-3">
+                  <textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="10"
+                    value={text}
+                    onChange={handleOnChange}
+                    style={{
+                      width: "100%",
+                      background: "transparent"
+                    }}
+                  ></textarea>
+                </div>
+              </div>
               <div className="mbr-section-btn mt-3">
                 <button
                   className="btn btn-success display-4"
