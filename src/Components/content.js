@@ -1,14 +1,16 @@
+// import { clear } from "@testing-library/user-event/dist/clear";
 import React, { useState } from "react";
 
-export default function Content() {
+export default function Content(props) {
   const [text, setText] = useState("");
   let generate_details = () => {
-    setText("hello");
-    console.log(text);
+    setText("This is rendom test for testing");
   };
-  let handleOnChange = (event) => {
-    console.log(event.target.value);
+  let clear_list = () => {
+    let clear = "";
+    setText(clear);
   };
+  let handleOnChange = (event) => {};
   return (
     <>
       <div
@@ -63,6 +65,12 @@ export default function Content() {
                   onClick={generate_details}
                 >
                   Generate
+                </button>
+                <button
+                  className="btn btn-danger display-4"
+                  onClick={clear_list}
+                >
+                  Clear List
                 </button>
               </div>
             </div>
@@ -161,3 +169,7 @@ export default function Content() {
     </>
   );
 }
+
+Content.defaultProps = {
+  clearText: true
+};
