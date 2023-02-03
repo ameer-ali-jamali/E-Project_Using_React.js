@@ -1,16 +1,26 @@
-// import { clear } from "@testing-library/user-event/dist/clear";
 import React, { useState } from "react";
+import { faker } from "@faker-js/faker";
 
 export default function Content(props) {
-  const [text, setText] = useState("");
+  const [name, setName] = useState("");
+  const [country, setCountry] = useState("");
+  const [city, setCity] = useState("");
+  const [zipCode, setZipCode] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
   let generate_details = () => {
-    setText(`Name :  Amjad`);
+    setName(faker.name.fullName());
+    setCountry(faker.address.country());
+    setCity(faker.address.city());
+    setZipCode(faker.address.zipCode());
+    setEmail(faker.internet.email());
+    setPhone(faker.phone.number());
   };
   let clear = () => {
     let clear = "";
-    setText(clear);
+    setName(clear);
   };
-  let handleOnChange = (event) => {};
+  // let handleOnChange = (event) => {};
   return (
     <>
       <div
@@ -35,7 +45,6 @@ export default function Content(props) {
               <h1 className="mbr-section-title mbr-fonts-style mb-3 display-1">
                 <strong>Generate Temp-Details</strong>
               </h1>
-
               <p className="mbr-text mbr-fonts-style display-7">
                 Here You Can Easily
                 <strong>
@@ -47,12 +56,40 @@ export default function Content(props) {
                 <div className="container mt-3 position-relative">
                   <div className="container">
                     <div className="container position-relative">
-                      <input
-                        type="text"
-                        name="name"
-                        value={text}
-                        onChange={handleOnChange}
-                      />
+                      <table className="bg-light">
+                        <thead>
+                          <tr>
+                            <th>Name</th>
+                            <th>Country</th>
+                            <th>City</th>
+                            <th>Zip Code</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <p>{name}</p>
+                            </td>
+                            <td>
+                              <p>{country}</p>
+                            </td>
+                            <td>
+                              <p>{city}</p>
+                            </td>
+                            <td>
+                              <p>{zipCode}</p>
+                            </td>
+                            <td>
+                              <p>{email}</p>
+                            </td>
+                            <td>
+                              <p>{phone}</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
                 </div>
