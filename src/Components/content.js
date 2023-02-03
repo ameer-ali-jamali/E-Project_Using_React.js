@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import { faker } from "@faker-js/faker";
 
 export default function Content(props) {
-  const [name, setName] = useState("");
-  const [country, setCountry] = useState("");
-  const [city, setCity] = useState("");
-  const [zipCode, setZipCode] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
+  let [name, setName] = useState("");
+  let [country, setCountry] = useState("");
+  let [city, setCity] = useState("");
+  let [zipCode, setZipCode] = useState("");
+  let [email, setEmail] = useState("");
+  let [phone, setPhone] = useState("");
+
   let generate_details = () => {
     setName(faker.name.fullName());
     setCountry(faker.address.country());
@@ -16,9 +17,14 @@ export default function Content(props) {
     setEmail(faker.internet.email());
     setPhone(faker.phone.number());
   };
-  let clear = () => {
-    let clear = "";
-    setName(clear);
+
+  let clearAll = () => {
+    setName("");
+    setCountry("");
+    setCity("");
+    setZipCode("");
+    setEmail("");
+    setPhone("");
   };
   // let handleOnChange = (event) => {};
   return (
@@ -46,47 +52,35 @@ export default function Content(props) {
                 <strong>Generate Temp-Details</strong>
               </h1>
               <p className="mbr-text mbr-fonts-style display-7">
-                Here You Can Easily
+                Here You Can Easily &nbsp;
                 <strong>
                   <em>Generate Temp-Details</em>
-                </strong>{" "}
+                </strong>
                 Which Will Be Use Anywhere as<em> You want to use</em>.
               </p>
               <div>
                 <div className="container mt-3 position-relative">
                   <div className="container">
                     <div className="container position-relative">
-                      <table className="bg-light">
-                        <thead>
+                      <table className="table">
+                        <thead className="table-dark">
                           <tr>
-                            <th>Name</th>
-                            <th>Country</th>
-                            <th>City</th>
-                            <th>Zip Code</th>
-                            <th>Email</th>
-                            <th>Phone</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Country</th>
+                            <th scope="col">City</th>
+                            <th scope="col">Zip Code</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Phone</th>
                           </tr>
                         </thead>
-                        <tbody>
+                        <tbody className="table-group-divider table-light">
                           <tr>
-                            <td>
-                              <p>{name}</p>
-                            </td>
-                            <td>
-                              <p>{country}</p>
-                            </td>
-                            <td>
-                              <p>{city}</p>
-                            </td>
-                            <td>
-                              <p>{zipCode}</p>
-                            </td>
-                            <td>
-                              <p>{email}</p>
-                            </td>
-                            <td>
-                              <p>{phone}</p>
-                            </td>
+                            <td>{name}</td>
+                            <td>{country}</td>
+                            <td>{city}</td>
+                            <td>{zipCode}</td>
+                            <td>{email}</td>
+                            <td>{phone}</td>
                           </tr>
                         </tbody>
                       </table>
@@ -105,7 +99,7 @@ export default function Content(props) {
                 <button
                   className="btn btn-danger display-4 display-class"
                   id="clearBtn"
-                  onClick={clear}
+                  onClick={clearAll}
                 >
                   Clear
                 </button>
