@@ -15,7 +15,7 @@ npm start
 
 ## Built With
 
-* [NodeJs](https://reactjs.org/)
+* [ReactJs](https://reactjs.org/)
 * [NodeJs](https://nodejs.org/en/)
 * [ExpressJs](https://expressjs.com)
 
