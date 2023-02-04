@@ -9,6 +9,8 @@ Before we run website, go to the local respository or downloaded folder (using c
 npm install
 ```
 
+### Running
+
 ```
 npm start
 ```
