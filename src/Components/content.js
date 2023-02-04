@@ -106,15 +106,10 @@ export default function Content() {
           <div className="row justify-content-center">
             <div className="title col-12 col-md-9">
               <h3 className="mbr-section-title mbr-fonts-style align-center mb-4 display-2">
-                <strong>Work with Content</strong>
+                <strong>Time is money</strong>
               </h3>
               <h4 className="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-7">
-                Click on the image to replace it. To change parameters of a
-                block, click on <em>the blue gear icon</em>. You can set a
-                background type and its content. Click on the Buttons parameter
-                to enable buttons for this block. Click in the text to change
-                your text style or color. Select text to change its formatting
-                or add links.
+                Temporary details website is a website that provides temporary information, usually for a short period of time. It can be used for various purposes such as event announcements, product launches, sales promotions, and more. The information on a temporary details website is usually updated frequently, and the website itself may be taken down after the event or promotion is over. The focus of a temporary details website is to provide quick and easy access to relevant information for a specific purpose.
               </h4>
             </div>
           </div>
@@ -131,24 +126,31 @@ export default function Content() {
                     alt="WebsiteBuild"
                   />
                 </a>
-                <p className="mbr-description mbr-fonts-style mt-2 align-center display-4">
-                  Image Description
-                </p>
+
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="content1 cid-s48vaXqeL6" id="content1-b">
+      <div className="content1 cid-s48vrXhP0J" id="content1-d">
         <div className="container">
           <div className="row justify-content-center">
             <div className="title col-12 col-md-9">
               <h3 className="mbr-section-title mbr-fonts-style align-center mb-4 display-2">
-                <strong>Add new blocks</strong>
+                <strong>Our Goal</strong>
               </h3>
               <h4 className="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-7">
-                Temp-Details can generate you random details which you will use
-                Anywhere
+                The goal of a temporary details website is to provide essential information to its visitors in a timely and efficient manner. The purpose of a temporary details website can vary, but some common goals include:
+
+                Event announcements: A temporary details website can be used to announce and promote events such as concerts, festivals, conferences, or product launches.
+
+                Sales promotions: Companies can use a temporary details website to promote sales and discounts on products or services.
+
+                Limited-time offers: Businesses may use a temporary details website to promote limited-time offers or promotions, such as discounts or free trials.
+
+                Temporary information: In some cases, organizations may use a temporary details website to provide temporary information, such as construction updates or temporary office locations.
+
+                Regardless of the purpose, the goal of a temporary details website is to provide relevant information to visitors in a quick and convenient way, while also directing them to take a specific action, such as signing up for an event or making a purchase.
               </h4>
             </div>
           </div>
@@ -159,37 +161,16 @@ export default function Content() {
           <div className="row justify-content-center">
             <div className="title col-12 col-md-9">
               <h3 className="mbr-section-title mbr-fonts-style align-center mb-4 display-2">
-                <strong>Create new pages</strong>
+                <strong>Description</strong>
               </h3>
               <h4 className="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-7">
-                You can have multiple pages in your project. Find the menu icon
-                at the top left corner. Move your cursor over it to open the
-                main menu. Click on the <strong>Pages </strong>tab to manage
-                your pages. Don't forget to set your page title and description.
-                This info is used by browsers and search engines. The home page
-                of your project cannot be removed.
+                Description typically refers to a brief, temporary description of a company or organization. It is typically used as placeholder text or interim content for a website that is under construction or being updated. This description provides a quick overview of the company's purpose, products, services, values, and mission, allowing visitors to get a basic understanding of what the company does. The "Temp Details About Us" description may also include contact information, such as a phone number or email address, for visitors who want to learn more about the company or get in touch. The description is usually replaced with a more comprehensive, permanent "About Us" page once the website is complete.
               </h4>
             </div>
           </div>
         </div>
       </div>
-      <div className="content1 cid-s48vrXhP0J" id="content1-d">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="title col-12 col-md-9">
-              <h3 className="mbr-section-title mbr-fonts-style align-center mb-4 display-2">
-                <strong>Publish your project</strong>
-              </h3>
-              <h4 className="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-7">
-                Click on the <strong>Publish </strong>button at the top right
-                corner and select a needed publishing option. Use the publish
-                option to publish your test site on our servers. You can publish
-                your site locally if you don't want to publish it online yet.
-              </h4>
-            </div>
-          </div>
-        </div>
-      </div>
+
     </>
   );
 
