@@ -6,16 +6,15 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div>
+    <>
       <Header title={"Temp-Details"} />
       <Routes>
-        <Route exact path="/" element={<Content />} />
-      </Routes>
-      <Routes>
+        <Route path="/" element={<Content />} />
+        <Route path="/index" element={<Content />} />
         <Route path="/about" element={<About />} />
       </Routes>
       <Footer />
-    </div>
+    </>
   );
 }
 

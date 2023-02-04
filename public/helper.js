@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 $(document).ready(function () {
   $("#generateDetailsBtn").click(function () {
     $("#clearBtn").show();
@@ -7,3 +8,4 @@ $(document).ready(function () {
     $("#clearBtn").hide();
   });
 });
+

@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { faker } from "@faker-js/faker";
 
-export default function Content(props) {
-  let [name, setName] = useState("");
-  let [country, setCountry] = useState("");
-  let [city, setCity] = useState("");
-  let [zipCode, setZipCode] = useState("");
-  let [email, setEmail] = useState("");
-  let [phone, setPhone] = useState("");
+export default function Content() {
+  const [name, setName] = useState("");
+  const [country, setCountry] = useState("");
+  const [city, setCity] = useState("");
+  const [zipCode, setZipCode] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
 
-  let generate_details = () => {
+  const generate_details = () => {
     setName(faker.name.fullName());
     setCountry(faker.address.country());
     setCity(faker.address.city());
@@ -18,7 +18,7 @@ export default function Content(props) {
     setPhone(faker.phone.number());
   };
 
-  let clearAll = () => {
+  const clearAll = () => {
     setName("");
     setCountry("");
     setCity("");
@@ -26,7 +26,6 @@ export default function Content(props) {
     setEmail("");
     setPhone("");
   };
-  // let handleOnChange = (event) => {};
   return (
     <>
       <div
@@ -193,8 +192,6 @@ export default function Content(props) {
       </div>
     </>
   );
+
 }
 
-Content.defaultProps = {
-  clearText: true
-};
