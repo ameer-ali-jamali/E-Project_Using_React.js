@@ -9,7 +9,7 @@ function App() {
     <>
       <Header title={"Temp-Details"} />
       <Routes>
-        <Route path="/" element={<Content />} />
+        <Route path="/ameer-ali-jamali.github.io" element={<Content />} />
         <Route path="/contact" element={<About />} />
         <Route path="/about" element={<About />} />
       </Routes>
