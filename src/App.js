@@ -9,7 +9,7 @@ function App() {
     <div>
       <Header title={"Temp-Details"} />
       <Routes>
-        <Route path="/content" element={<Content />} />
+        <Route exact path="/" element={<Content />} />
       </Routes>
       <Routes>
         <Route path="/about" element={<About />} />
