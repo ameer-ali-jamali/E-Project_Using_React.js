@@ -62,7 +62,7 @@ export default function Content(props) {
                 <div className="container mt-3 position-relative">
                   <div className="container">
                     <div className="container position-relative">
-                      <table className="table display-none" id="showTable">
+                      <table className="table display-class" id="showTable">
                         <thead className="table-dark">
                           <tr>
                             <th scope="col">Name</th>

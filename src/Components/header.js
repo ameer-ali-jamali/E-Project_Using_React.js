@@ -1,5 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
+// import { Link } from "react-router-dom";
+
 export default function Header(props) {
   return (
     <section className="menu cid-s48OLK6784" alt="menu" id="menu1-h">
@@ -51,11 +53,8 @@ export default function Header(props) {
                 </a>
               </li>
               <li className="nav-item">
-                <a
-                  className="nav-link link text-black display-4"
-                  href={"/about"}
-                >
-                  About
+                <a className="nav-link link text-black display-4" href="/about">
+                  About Us
                 </a>
               </li>
             </ul>
