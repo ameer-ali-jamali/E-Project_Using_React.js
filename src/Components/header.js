@@ -43,7 +43,10 @@ export default function Header(props) {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link link text-black display-4" to="/">
+                <Link
+                  className="nav-link link text-black display-4"
+                  to="/content"
+                >
                   Generate Details
                 </Link>
               </li>

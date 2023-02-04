@@ -58,40 +58,34 @@ export default function Content(props) {
                 </strong>
                 Which Will Be Use Anywhere as<em> You want to use</em>.
               </p>
-              <div>
-                <div className="container mt-3 position-relative">
-                  <div className="container">
-                    <div className="container position-relative">
-                      <table className="table display-class" id="showTable">
-                        <thead className="table-dark">
-                          <tr>
-                            <th scope="col">Name</th>
-                            <th scope="col">Country</th>
-                            <th scope="col">City</th>
-                            <th scope="col">Zip Code</th>
-                            <th scope="col">Email</th>
-                            <th scope="col">Phone</th>
-                          </tr>
-                        </thead>
-                        <tbody className="table-group-divider table-light">
-                          <tr>
-                            <td>{name}</td>
-                            <td>{country}</td>
-                            <td>{city}</td>
-                            <td>{zipCode}</td>
-                            <td>{email}</td>
-                            <td>{phone}</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            </div>
+            <table className="table display-class" id="showTable">
+              <thead className="table-dark">
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Country</th>
+                  <th scope="col">City</th>
+                  <th scope="col">Zip Code</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Phone</th>
+                </tr>
+              </thead>
+              <tbody className="table-group-divider table-light">
+                <tr>
+                  <td>{name}</td>
+                  <td>{country}</td>
+                  <td>{city}</td>
+                  <td>{zipCode}</td>
+                  <td>{email}</td>
+                  <td>{phone}</td>
+                </tr>
+              </tbody>
+            </table>
+            <div className="align-center container">
               <div className="mbr-section-btn mt-3">
                 <button
                   className="btn btn-success display-4"
-                  id="generateNameBtn"
+                  id="generateDetailsBtn"
                   onClick={generate_details}
                 >
                   Generate

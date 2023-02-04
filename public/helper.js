@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $("#generateNameBtn").click(function () {
+  $("#generateDetailsBtn").click(function () {
     $("#clearBtn").show();
     $("#showTable").show();
   });
