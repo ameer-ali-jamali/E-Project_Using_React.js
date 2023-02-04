@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Header(props) {
   return (
@@ -37,25 +37,28 @@ export default function Header(props) {
               data-app-modern-menu="true"
             >
               <li className="nav-item">
-                <a className="nav-link link text-black display-4" href={"/"}>
+                <Link className="nav-link link text-black display-4" to="/">
                   Home
                   <br />
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link link text-black display-4" href={"/"}>
+                <Link className="nav-link link text-black display-4" to="/">
                   Generate Details
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link link text-black display-4" href={"/"}>
+                <Link className="nav-link link text-black display-4" to="/">
                   Contact Us
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link link text-black display-4" href="/about">
+                <Link
+                  className="nav-link link text-black display-4"
+                  to="/about"
+                >
                   About Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
