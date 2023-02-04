@@ -1,6 +1,6 @@
 # React.js
 # Temp-Details Generate Website
-## Demo short video [ Download ]([https://www.mediafire.com/file/2phcepw22dv9dj8/E-books-Website-Demo.mp4/file](https://www.mediafire.com/file/c67guiwwks9dlzv/Temp-Details_Demo.mp4/file))
+## Demo short video [ Download ](https://www.mediafire.com/file/c67guiwwks9dlzv/Temp-Details_Demo.mp4/file)
 ## Getting Started
 Download the code from repository and follow below given instructions.
 
