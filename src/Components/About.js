@@ -1,26 +1,23 @@
-import React from 'react'
+
 
 export default function About() {
     return (
         <div>
 
             <div className="w3-content w3-margin-top" style={{ maxWidth: '1400px' }}>
-
                 <div className="w3-row-padding">
-
                     <div className="w3-third">
-
                         <div className="w3-white w3-text-grey w3-card-4">
-                            <div className="w3-display-container">
+                            <div className="w3-display-container mt-3">
                                 <img src={"assets/images/ameer_ali.jpg"} style={{
                                     width: '100%'
                                 }} alt="Avatar" />
                                 <div className="w3-display-bottomleft w3-container w3-text-black">
-                                    <h2>Jane Doe</h2>
+                                    <h2>Ameer Ali Jamlai</h2>
                                 </div>
                             </div>
-                            <div className="w3-container">
-                                <p><i className="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Designer</p>
+                            <div className="w3-container mt-3">
+                                <p><i className="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Full Stack Web Developer</p>
                                 <p><i className="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>London, UK</p>
                                 <p><i className="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>ex@mail.com</p>
                                 <p><i className="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>1224435534</p>
@@ -85,7 +82,7 @@ export default function About() {
 
                     <div className="w3-twothird">
 
-                        <div className="w3-container w3-card w3-white w3-margin-bottom">
+                        <div className="w3-container w3-card w3-white w3-margin-bottom mt-3">
                             <h2 className="w3-text-grey w3-padding-16"><i
                                 className="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience
                             </h2>
