@@ -38,15 +38,15 @@ export default function Header(props) {
               data-app-modern-menu="true"
             >
               <li className="nav-item">
-                <NavLink to={"/"} className="nav-link link text-black display-4">
+                <a href="/" className="nav-link link text-black display-4">
                   Home
                   <br />
-                </NavLink>
+                </a>
               </li>
               <li className="nav-item">
-                <NavLink to={"/"} className="nav-link link text-black display-4" >
+                <a href="/" className="nav-link link text-black display-4" >
                   Generate Details
-                </NavLink>
+                </a>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link link text-black display-4" to={"/"}>
