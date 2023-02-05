@@ -37,10 +37,10 @@ export default function Header(props) {
               data-app-modern-menu="true"
             >
               <li className="nav-item">
-                <Link href="/" className="nav-link link text-black display-4">
+                <a href="header" className="nav-link link text-black display-4">
                   Home
                   <br />
-                </Link>
+                </a>
               </li>
               <li className="nav-item">
                 <a href='/' className="nav-link link text-black display-4" >
