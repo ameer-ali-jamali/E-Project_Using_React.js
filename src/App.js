@@ -9,8 +9,7 @@ function App() {
     <>
       <Header title={"Temp-Details"} />
       <Routes>
-        <Route path="/ameer-ali-jamali.github.io" element={<Content />} />
-        <Route path="/contact" element={<About />} />
+        <Route exact path="/" element={<Content />} />
         <Route path="/about" element={<About />} />
       </Routes>
       <Footer />
