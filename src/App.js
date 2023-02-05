@@ -9,7 +9,7 @@ function App() {
     <>
       <Header title={"Temp-Details"} />
       <Routes>
-        <Route exact path="/" element={<Content />} />
+        <Route path="/" element={<Content />} />
         <Route path="/about" element={<About />} />
       </Routes>
       <Footer />
