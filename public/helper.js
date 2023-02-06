@@ -2,7 +2,7 @@
 $(document).ready(function () {
   $("#generateDetailsBtn").click(function () {
     $("#clearBtn").show();
-    $("#showTable").show();
+    $("#hideTable").show();
   });
   $("#clearBtn").click(function () {
     $("#clearBtn").hide();

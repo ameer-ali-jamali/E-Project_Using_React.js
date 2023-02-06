@@ -26,6 +26,7 @@ export default function Content() {
     setEmail("");
     setPhone("");
   };
+
   return (
     <>
       <div
@@ -44,7 +45,7 @@ export default function Content() {
           }}
         ></div>
 
-        <div className="align-center container">
+        <div className="align-center container-fluid">
           <div className="row justify-content-center">
             <div className="col-12 col-lg-9">
               <h1 className="mbr-section-title mbr-fonts-style mb-3 display-1">
@@ -58,28 +59,24 @@ export default function Content() {
                 Which Will Be Use Anywhere as<em> You want to use</em>.
               </p>
             </div>
-            <table className="table display-class" id="showTable">
-              <thead className="table-dark">
-                <tr>
-                  <th scope="col">Name</th>
-                  <th scope="col">Country</th>
-                  <th scope="col">City</th>
-                  <th scope="col">Zip Code</th>
-                  <th scope="col">Email</th>
-                  <th scope="col">Phone</th>
-                </tr>
-              </thead>
-              <tbody className="table-group-divider table-light">
-                <tr>
-                  <td>{name}</td>
-                  <td>{country}</td>
-                  <td>{city}</td>
-                  <td>{zipCode}</td>
-                  <td>{email}</td>
-                  <td>{phone}</td>
-                </tr>
-              </tbody>
-            </table>
+            <div className="row justify-content-center">
+
+              <div className="col-12 col-lg-9  display-class  border-solid" id="hideTable" >
+
+                <hr />
+                <label htmlFor="fname" className="mx-2">Full Name &nbsp;<input className="objectFit " type="text" name="" id="fname" value={name} /></label>
+                <label htmlFor="country" className="mx-2">Country &nbsp;<input className="objectFit " type="text" name="" id="country" value={country} /></label>
+                <label htmlFor="city" className="mx-2">City &nbsp;<input className="objectFit " type="text" name="" id="city" value={city} /></label>
+                <hr />
+                <label htmlFor="zipCode" className="mx-2">ZipCode &nbsp;<input className="objectFit " type="text" name="" id="zipCode" value={zipCode} /></label>
+                <label htmlFor="email" className="mx-2">Email &nbsp;<input className="objectFit " type="text" name="" id="email" value={email} /></label>
+                <label htmlFor="phone" className="mx-2">Phone &nbsp;<input className="objectFit " type="text" name="" id="phone" value={phone} /></label>
+                <hr />
+
+              </div>
+
+            </div>
+
             <div className="align-center container">
               <div className="mbr-section-btn mt-3">
                 <button
