@@ -26,7 +26,7 @@ export default function Content() {
     setEmail("");
     setPhone("");
   };
-
+  const handleChange = () => { };
   return (
     <>
       <div
@@ -63,14 +63,15 @@ export default function Content() {
 
               <div className="col-12 col-lg-9  display-class  border-solid" id="hideTable" >
 
+
                 <hr />
-                <label htmlFor="fname" className="mx-2">Full Name &nbsp;<input className="objectFit " type="text" name="" id="fname" value={name} /></label>
-                <label htmlFor="country" className="mx-2">Country &nbsp;<input className="objectFit " type="text" name="" id="country" value={country} /></label>
-                <label htmlFor="city" className="mx-2">City &nbsp;<input className="objectFit " type="text" name="" id="city" value={city} /></label>
+                <label htmlFor="fname" className="mx-2">Full Name &nbsp;<input className="objectFit " type="text" name="" id="fname" value={name} onChange={handleChange} /></label>
+                <label htmlFor="country" className="mx-2">Country &nbsp;<input className="objectFit " type="text" name="" id="country" value={country} onChange={handleChange} /></label>
+                <label htmlFor="city" className="mx-2">City &nbsp;<input className="objectFit " type="text" name="" id="city" value={city} onChange={handleChange} /></label>
                 <hr />
-                <label htmlFor="zipCode" className="mx-2">ZipCode &nbsp;<input className="objectFit " type="text" name="" id="zipCode" value={zipCode} /></label>
-                <label htmlFor="email" className="mx-2">Email &nbsp;<input className="objectFit " type="text" name="" id="email" value={email} /></label>
-                <label htmlFor="phone" className="mx-2">Phone &nbsp;<input className="objectFit " type="text" name="" id="phone" value={phone} /></label>
+                <label htmlFor="zipCode" className="mx-2">ZipCode &nbsp;<input className="objectFit " type="text" name="" id="zipCode" value={zipCode} onChange={handleChange} /></label>
+                <label htmlFor="email" className="mx-2">Email &nbsp;<input className="objectFit " type="text" name="" id="email" value={email} onChange={handleChange} /></label>
+                <label htmlFor="phone" className="mx-2">Phone &nbsp;<input className="objectFit " type="text" name="" id="phone" value={phone} onChange={handleChange} /></label>
                 <hr />
 
               </div>
