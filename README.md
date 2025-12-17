@@ -1,8 +1,7 @@
-# React.js
-## Temp-Details Generate Website
-## Live website  [Click Me](https://temprory-details.netlify.app/)
-## Demo short video [ Download ](https://www.mediafire.com/file/c67guiwwks9dlzv/Temp-Details_Demo.mp4/file)
-## Getting Started
+# Temp-Details Generate Website
+# Live website  [Click Me](https://temprory-details.netlify.app/)
+# Demo short video [ Download ](https://www.mediafire.com/file/c67guiwwks9dlzv/Temp-Details_Demo.mp4/file)
+# Getting Started
 Download the code from repository and follow below given instructions.
 
 
